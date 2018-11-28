@@ -19,6 +19,9 @@ func sayhelloName(resp http.ResponseWriter, req *http.Request) {
 	fmt.Fprint(resp, "Hello simple web!")
 }
 
+// 浏览器测试
+// http://localhost:9090
+// http://localhost:9090/?url_long=111&url_long=222
 func main()  {
 	http.HandleFunc("/", sayhelloName)
 	err := http.ListenAndServe(":9090", nil)
