@@ -1,0 +1,2 @@
+# GoDemo
+demo for golang
